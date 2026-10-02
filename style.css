@@ -24,14 +24,37 @@ nav {
 }
 
 .logo {
-    color: #00eaff;
-    font-size: 22px;
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #eafaff;
+    font-size: 19px;
     font-weight: bold;
     letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+.logo::before {
+    content: "✧";
+    display: grid;
+    place-items: center;
+
+    width: 32px;
+    height: 32px;
+
+    color: #00eaff;
+    font-size: 25px;
+    border: 1px solid #00eaff66;
+    border-radius: 50%;
+
+    box-shadow: 0 0 15px #00eaff22;
 }
 
 nav ul {
-    display: flex;
+   order: 1;
+   display: flex;
     gap: 25px;
     list-style: none;
 }
@@ -158,6 +181,13 @@ nav a:hover {
     }
 
     nav {
+        .logo {
+    order: 1;
+}
+
+nav ul {
+    order: 2;
+}
         flex-direction: column;
         gap: 20px;
     }
