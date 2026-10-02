@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050914;
+    color: #eafaff;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+header {
+    padding: 22px 7%;
+    border-bottom: 1px solid #163044;
+    background: #080f1c;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00eaff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #a8c2d5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+/* HERO SECTION */
+.hero {
+    min-height: 85vh;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 560px;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    color: #00eaff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 72px);
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #00eaff;
+}
+
+.description {
+    color: #91a9bd;
+    line-height: 1.8;
+    max-width: 440px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 22px;
+    background: #00eaff;
+    color: #050914;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #ffffff;
+    box-shadow: 0 0 25px #00eaff55;
+}
+
+/* PLANET */
+.hero-visual {
+    width: 320px;
+    height: 320px;
+    flex-shrink: 0;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.planet {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 30% 30%,
+        #72f5ff,
+        #1873b9 45%,
+        #101a46 75%
+    );
+    box-shadow:
+        0 0 35px #00eaff44,
+        inset -18px -12px 35px #020617;
+}
+
+.orbit {
+    position: absolute;
+    width: 280px;
+    height: 110px;
+    border: 1px solid #00eaff66;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+}
+
+.orbit-two {
+    width: 310px;
+    height: 150px;
+    transform: rotate(35deg);
+    border-color: #9675ff55;
+}
+
+.planet-label {
+    position: absolute;
+    bottom: 5px;
+    color: #00eaff;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 600px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 60px 6%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 9vw, 48px);
+    }
+
+    .description {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 320px;
+        height: 300px;
+        align-self: center;
+    }
+}
+/* SPACE LAB CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 40px 7% 70px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px;
+    min-width: 0;
+
+    background: linear-gradient(
+        145deg,
+        #0d1a2c,
+        #070d19
+    );
+
+    border: 1px solid #16445b;
+    border-radius: 8px;
+    color: #eafaff;
+    text-decoration: none;
+
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00eaff;
+    box-shadow: 0 0 22px #00eaff18;
+}
+
+.card-icon {
+    display: grid;
+    place-items: center;
+
+    width: 52px;
+    height: 52px;
+    margin-bottom: 24px;
+
+    border: 1px solid #00eaff;
+    border-radius: 50%;
+
+    color: #00eaff;
+    font-size: 23px;
+}
+
+.card-number {
+    color: #00eaff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card > p:not(.card-number) {
+    color: #91a9bd;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.card-link {
+    margin-top: auto;
+    color: #00eaff;
+    font-size: 13px;
+}
+
+/* RESPONSIVE KARTU */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 20px 6% 50px;
+        gap: 16px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+}
+
+/* ABOUT SECTION */
+.about {
+    margin: 0 6% 40px;
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+
+    background: linear-gradient(135deg, #0c192b, #070d19);
+    border: 1px solid #16445b;
+    border-radius: 8px;
+}
+
+.about-label {
+    grid-column: 1 / -1;
+    color: #00eaff;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.about-description {
+    color: #91a9bd;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.about-tags span {
+    padding: 9px 12px;
+    border: 1px solid #00a9c5;
+    border-radius: 4px;
+    color: #00eaff;
+    font-size: 11px;
+}
+
+.about-interests h3,
+.about-updates h3 {
+    color: #00eaff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.interest-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.interest-icon {
+    min-width: 25px;
+    color: #00eaff;
+    font-size: 20px;
+}
+
+.interest-item h4 {
+    margin-bottom: 5px;
+}
+
+.interest-item p,
+.about-updates p {
+    color: #91a9bd;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.about-updates p {
+    margin-bottom: 12px;
+}
+
+.about-updates p span {
+    color: #00eaff;
+    margin-right: 8px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 28px 6%;
+    border-top: 1px solid #16445b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    color: #00eaff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer p {
+    color: #d6e8f5;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.footer > span {
+    color: #91a9bd;
+    font-size: 12px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+    .about {
+        grid-template-columns: 1fr;
+        padding: 22px;
+        gap: 28px;
+    }
+
+    .about-label {
+        grid-column: auto;
+    }
+
+    .about-content h2 {
+        font-size: 26px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* COSMIC WORDS */
+.quote-section {
+    padding: 10px 6% 50px;
+}
+
+.quote-section > .eyebrow {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.quote-card {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px 24px;
+    overflow: hidden;
+    text-align: center;
+
+    background: radial-gradient(
+        ellipse at top,
+        #102d49,
+        #080f1d 70%
+    );
+
+    border: 1px solid #087b96;
+    border-radius: 8px;
+    box-shadow: 0 0 25px #00eaff0a;
+}
+
+.quote-symbol {
+    color: #00eaff;
+    font-family: Georgia, serif;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.quote-label {
+    color: #00eaff;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin: 15px 0;
+}
+
+.quote-card blockquote {
+    color: #eafaff;
+    font-size: clamp(20px, 4vw, 30px);
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.quote-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    border-top: 1px solid #16445b;
+
+    color: #7198b1;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .quote-card {
+        padding: 25px 18px;
+    }
+
+    .quote-footer {
+        font-size: 9px;
+    }
+}
