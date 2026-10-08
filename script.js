@@ -200,3 +200,28 @@ if (quoteElement && quotes.length > 0) {
         String(randomIndex)
     );
 }
+// =========================
+// NOVA TRANSMISSION
+// =========================
+
+const novaPoems = [
+    "Semua bermula dari rasa ingin tahu.\nLalu langkah kecil membawa kita lebih jauh.",
+
+    "Langit menyimpan begitu banyak rahasia.\nKita hanya perlu berani untuk menatapnya.",
+
+    "Sebuah ide mungkin terlihat kecil.\nNamun dari sanalah sesuatu yang besar dimulai.",
+
+    "Kita menjelajah bukan karena tahu jawabannya,\nmelainkan karena ingin menemukan pertanyaannya.",
+
+    "Kode, cahaya, kamera, dan imajinasi.\nBerbeda jalan, tetapi satu tujuan: berkarya.",
+
+    "Tidak semua perjalanan harus memiliki peta.\nKadang rasa penasaran adalah kompas terbaik.",
+
+    "Hari ini hanya sebuah percobaan.\nBesok mungkin menjadi sebuah karya."
+];
+
+const randomPoem =
+    novaPoems[Math.floor(Math.random() * novaPoems.length)];
+
+console.log("✦ NOVA TRANSMISSION");
+console.log(randomPoem);
