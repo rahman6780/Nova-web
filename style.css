@@ -676,3 +676,38 @@ nav ul {
 .about-content .planet-ring {
     display: none;
 }
+/* =========================
+   KARYA PAGE
+========================= */
+
+.karya-card {
+    margin-top: 40px;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.karya-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.karya-number {
+    font-size: 12px;
+    letter-spacing: 3px;
+    opacity: 0.6;
+}
+
+.karya-card h2 {
+    margin: 10px 0;
+}
+
+.karya-card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
