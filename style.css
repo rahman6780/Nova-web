@@ -617,15 +617,28 @@ nav ul {
 .about-content::after {
     content: "";
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     top: 50%;
     right: 15px;
-    margin-top: -12px;
+    margin-top: -13px;
     border-radius: 50%;
-    background: #171717;
-    box-shadow: 0 0 0 5px rgba(23, 23, 23, 0.08);
+
+    background: radial-gradient(
+        circle at 30% 30%,
+        #ffffff 0%,
+        #bdbdbd 35%,
+        #555555 70%,
+        #222222 100%
+    );
+
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.45),
+        0 0 25px rgba(255, 255, 255, 0.18);
+
     animation: rahmanOrbit 7s linear infinite;
+    z-index: 2;
+}
 }
 
 @keyframes rahmanOrbit {
