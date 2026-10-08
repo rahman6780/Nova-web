@@ -591,3 +591,49 @@ nav ul {
     margin-top: 10px;
     font-weight: bold;
 }
+/* =========================
+   RAHMAN // ORBIT CARD
+========================= */
+
+.about-content {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Orbit */
+.about-content::before {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: 50%;
+    right: -70px;
+    transform: translateY(-50%);
+    border: 1px solid rgba(120, 120, 120, 0.35);
+    border-radius: 50%;
+}
+
+/* Planet */
+.about-content::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    right: 15px;
+    margin-top: -12px;
+    border-radius: 50%;
+    background: #171717;
+    box-shadow: 0 0 0 5px rgba(23, 23, 23, 0.08);
+    animation: rahmanOrbit 7s linear infinite;
+}
+
+@keyframes rahmanOrbit {
+    0% {
+        transform: rotate(0deg) translateX(85px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(85px) rotate(-360deg);
+    }
+}
