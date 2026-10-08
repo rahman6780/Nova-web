@@ -555,3 +555,39 @@ nav ul {
     font-size: 13px;
     color: #888;
 }
+/* =========================
+   KARYA CARD
+========================= */
+
+.karya-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.karya-card::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: -70px;
+    border: 1px solid #d8d8d8;
+    border-radius: 50%;
+}
+
+.karya-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.karya-card .card-icon {
+    font-size: 30px;
+}
+
+.karya-card .card-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
