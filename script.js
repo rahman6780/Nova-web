@@ -1,5 +1,7 @@
 
 const quotes = [
+  console.log("NOVA QUOTES:", quotes.length);
+console.log("SAMPLE QUOTE:", quotes[0]);
     // 01 — COSMIC UNKNOWN
     {
         category: "COSMIC UNKNOWN",
