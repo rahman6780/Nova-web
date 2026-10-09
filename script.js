@@ -1,227 +1,184 @@
 
 const quotes = [
-    // ASTRONOMY & UNIVERSE
+    // 01 — ASTRONOMY: wonder & mystery
     {
         category: "ASTRONOMY",
-        text: "Kita mungkin kecil di alam semesta, tetapi rasa ingin tahu membawa kita menjelajah jauh."
+        text: "Ada bintang yang cahayanya sudah berangkat sebelum manusia menemukan cara untuk memotretnya."
     },
     {
         category: "ASTRONOMY",
-        text: "Bintang pun membutuhkan gelap untuk terlihat bersinar."
+        text: "Semesta tidak perlu berbicara. Keberadaannya saja sudah mengundang jutaan pertanyaan."
     },
     {
         category: "ASTRONOMY",
-        text: "Langit malam adalah pengingat bahwa masih banyak hal yang belum kita pahami."
+        text: "Di antara miliaran galaksi, kita masih sibuk mencari tahu seberapa istimewa rumah kecil bernama Bumi."
     },
     {
         category: "ASTRONOMY",
-        text: "Memandang bintang membuat kita sadar betapa luasnya hal yang belum kita ketahui."
+        text: "Langit malam bukan ruang kosong. Ia penuh dengan sesuatu yang belum kita mengerti."
     },
     {
         category: "ASTRONOMY",
-        text: "Cahaya yang kita lihat hari ini bisa jadi telah memulai perjalanannya jauh sebelum kita lahir."
+        text: "Mungkin hal paling menakjubkan dari semesta adalah kenyataan bahwa kita bisa bertanya tentangnya."
     },
     {
         category: "ASTRONOMY",
-        text: "Alam semesta tidak kehabisan misteri, dan manusia tidak seharusnya kehabisan pertanyaan."
-    },
-    {
-        category: "ASTRONOMY",
-        text: "Setiap titik cahaya di langit menyimpan kisah yang belum tentu kita ketahui."
-    },
-    {
-        category: "ASTRONOMY",
-        text: "Bumi adalah rumah kecil di tengah sesuatu yang nyaris tak terbayangkan luasnya."
-    },
-    {
-        category: "ASTRONOMY",
-        text: "Kita tidak harus pergi ke luar angkasa untuk mulai mengaguminya."
-    },
-    {
-        category: "ASTRONOMY",
-        text: "Semakin jauh kita memandang, semakin banyak alasan untuk terus belajar."
+        text: "Kita menatap masa lalu setiap kali melihat cahaya dari benda langit yang jauh."
     },
 
-    // DEVELOPER LIFE
+    // 02 — DEVELOPER LIFE: honest & practical
     {
         category: "DEVELOPER LIFE",
-        text: "Jangan hanya mengagumi teknologi. Pelajari cara membangunnya."
+        text: "Kalau cuma ingin kode yang jalan, salin saja. Kalau ingin jadi developer, cari tahu kenapa ia berjalan."
     },
     {
         category: "DEVELOPER LIFE",
-        text: "Satu baris kode mungkin terlihat kecil, tetapi bisa menjadi awal dari sesuatu yang besar."
+        text: "Proyek kecil yang benar-benar selesai lebih nyata daripada sepuluh ide yang cuma tinggal di kepala."
     },
     {
         category: "DEVELOPER LIFE",
-        text: "Developer bukan orang yang tidak pernah salah, melainkan orang yang mau memahami kesalahannya."
+        text: "Hari ini belum paham. Besok coba lagi. Kode tidak akan tersinggung kalau kamu belajar pelan-pelan."
     },
     {
         category: "DEVELOPER LIFE",
-        text: "Jangan cuma mencari kode yang berhasil. Cari tahu juga kenapa kode itu berhasil."
+        text: "Mengetik cepat itu keterampilan. Memahami masalah sebelum mengetik adalah kebiasaan yang berharga."
     },
     {
         category: "DEVELOPER LIFE",
-        text: "Kemampuan coding tumbuh ketika kamu berhenti takut mencoba."
+        text: "Tidak semua orang harus menjadi programmer. Tapi siapa pun boleh belajar bagaimana teknologi bekerja."
     },
     {
         category: "DEVELOPER LIFE",
-        text: "Proyek pertamamu tidak harus sempurna. Ia hanya perlu menjadi awal."
-    },
-    {
-        category: "DEVELOPER LIFE",
-        text: "Jangan sekadar menyalin solusi. Pahami masalah yang sedang kamu selesaikan."
-    },
-    {
-        category: "DEVELOPER LIFE",
-        text: "Setiap error adalah kesempatan untuk mengenal kode lebih dalam."
-    },
-    {
-        category: "DEVELOPER LIFE",
-        text: "Teknologi terus berkembang. Kebiasaan belajar akan membantumu ikut berkembang."
-    },
-    {
-        category: "DEVELOPER LIFE",
-        text: "Bangun sesuatu yang membuatmu bangga, meskipun awalnya hanya proyek kecil."
+        text: "Satu proyek mengajarkan lebih banyak daripada seratus rencana yang tidak pernah diuji."
     },
 
-    // DEEP THOUGHTS
+    // 03 — DEEP THOUGHTS: reflective & sharp
     {
         category: "DEEP THOUGHTS",
-        text: "Tidak semua hal harus segera dimengerti. Beberapa hal perlu dijelajahi."
+        text: "Kadang kita bukan kehilangan arah. Kita hanya terlalu lama berjalan di jalan yang dipilih orang lain."
     },
     {
         category: "DEEP THOUGHTS",
-        text: "Kamu tidak harus mengetahui seluruh jalan untuk mulai melangkah."
+        text: "Berubah pikiran setelah belajar sesuatu bukan kelemahan. Bisa jadi itu tanda kamu mulai memahami."
     },
     {
         category: "DEEP THOUGHTS",
-        text: "Rasa penasaran adalah awal dari banyak penemuan."
+        text: "Tidak semua hal yang ramai dibicarakan pantas mendapatkan perhatianmu."
     },
     {
         category: "DEEP THOUGHTS",
-        text: "Tidak tahu bukanlah kelemahan. Berhenti ingin tahu adalah kesempatan yang terlewat."
+        text: "Ada perbedaan besar antara terlihat sibuk dan benar-benar menghasilkan sesuatu."
     },
     {
         category: "DEEP THOUGHTS",
-        text: "Terkadang, kemajuan paling berarti terjadi ketika tidak ada yang melihat."
+        text: "Kamu boleh menyimpan pelajaran dari masa lalu tanpa harus tinggal di dalamnya."
     },
     {
         category: "DEEP THOUGHTS",
-        text: "Jangan ukur perjalananmu hanya dari seberapa jauh orang lain sudah melangkah."
-    },
-    {
-        category: "DEEP THOUGHTS",
-        text: "Kamu boleh mengubah arah tanpa harus membuang semua yang telah dipelajari."
-    },
-    {
-        category: "DEEP THOUGHTS",
-        text: "Masa depan tidak dibangun sekaligus, melainkan melalui pilihan-pilihan kecil."
-    },
-    {
-        category: "DEEP THOUGHTS",
-        text: "Tidak semua pertanyaan langsung punya jawaban, dan itu bukan alasan untuk berhenti bertanya."
-    },
-    {
-        category: "DEEP THOUGHTS",
-        text: "Terus bertumbuh, tanpa harus selalu membuktikan sesuatu kepada semua orang."
+        text: "Pendapat yang kuat tetap perlu ruang untuk dikoreksi."
     },
 
-    // DEVELOPER HUMOR
+    // 04 — DEV HUMOR: coding chaos
     {
         category: "DEV HUMOR",
-        text: "Katanya cuma mau memperbaiki satu bug. Tiga jam kemudian, bug-nya bertambah dua."
+        text: "Bug-nya sudah diperbaiki. Sekarang aplikasinya punya masalah baru yang tidak tercantum di tiket."
     },
     {
         category: "DEV HUMOR",
-        text: "Kode berjalan lancar. Jangan disentuh. Jangan ditanya. Jangan diubah."
+        text: "JavaScript bilang undefined. Programmer bilang, 'Lah, tadi masih ada!'"
     },
     {
         category: "DEV HUMOR",
-        text: "Bug paling misterius adalah bug yang menghilang saat mau ditunjukkan ke orang lain."
+        text: "CSS: cuma mau geser satu div. Dua jam kemudian, seluruh layout ikut pindah rumah."
     },
     {
         category: "DEV HUMOR",
-        text: "Programmer: memperbaiki satu masalah, lalu menemukan tiga masalah baru."
+        text: "Kode berjalan sempurna di laptop sendiri. Begitu dipresentasikan, mendadak punya kepribadian."
     },
     {
         category: "DEV HUMOR",
-        text: "Kalau kodenya berhasil pada percobaan pertama, cek lagi. Siapa tahu cuma kebetulan."
+        text: "Dokumentasi sudah dibaca. Tutorial sudah ditonton. Error tetap memilih jalannya sendiri."
     },
     {
         category: "DEV HUMOR",
-        text: "Komentar kode: menjelaskan kenapa kode ini ada. Programmer masa depan: tetap bingung."
+        text: "Programmer tidak selalu butuh kopi. Kadang cuma butuh tahu kenapa tanda kurungnya kurang satu."
+    },
+
+    // 05 — PHOTOGRAPHY: light, timing & perspective
+    {
+        category: "PHOTOGRAPHY",
+        text: "Kamera menangkap apa yang ada di depan lensa. Fotografer memutuskan apa yang layak diceritakan."
     },
     {
-        category: "DEV HUMOR",
-        text: "Error-nya satu baris. Waktu mencarinya satu jam. Penyebabnya kurang satu tanda."
+        category: "PHOTOGRAPHY",
+        text: "Cahaya yang sama bisa menghasilkan dua cerita berbeda, tergantung dari mana kamu melihatnya."
     },
     {
-        category: "DEV HUMOR",
-        text: "Aku bukan malas debugging. Aku sedang memberi kesempatan bug untuk mengaku."
+        category: "PHOTOGRAPHY",
+        text: "Momen tidak menunggu pengaturan kameramu selesai. Belajar membaca situasi sama pentingnya dengan belajar teknis."
     },
     {
-        category: "DEV HUMOR",
-        text: "Jangan takut pada error. Takutlah ketika tidak ada error, tetapi hasilnya juga tidak ada."
+        category: "PHOTOGRAPHY",
+        text: "Kadang sudut terbaik bukan yang paling tinggi, melainkan yang membuat sebuah cerita terasa dekat."
     },
     {
-        category: "DEV HUMOR",
-        text: "Rencana: coding 30 menit. Kenyataan: mencari kenapa file tidak tersimpan."
+        category: "PHOTOGRAPHY",
+        text: "Foto yang sederhana bisa terasa luar biasa ketika berhasil menyimpan sesuatu yang berarti."
+    },
+    {
+        category: "PHOTOGRAPHY",
+        text: "Peralatan punya batas. Cara melihat masih bisa terus berkembang."
+    },
+
+    // 06 — REALITY CHECK: grounded & direct
+    {
+        category: "REALITY CHECK",
+        text: "Tidak semua minat harus menjadi profesi. Ada hal yang tetap berharga karena kamu menikmatinya."
+    },
+    {
+        category: "REALITY CHECK",
+        text: "Kamu tidak harus menguasai semuanya hari ini. Bahkan mesin pencari pun perlu kata kunci."
+    },
+    {
+        category: "REALITY CHECK",
+        text: "Rencana yang berubah bukan selalu kegagalan. Kadang informasinya memang sudah berbeda."
+    },
+    {
+        category: "REALITY CHECK",
+        text: "Semangat bisa membuka pintu. Kebiasaanlah yang membantumu datang kembali."
+    },
+    {
+        category: "REALITY CHECK",
+        text: "Tidak semua kemajuan terlihat keren. Sebagian cuma berupa kesalahan yang tidak kamu ulangi."
+    },
+    {
+        category: "REALITY CHECK",
+        text: "Kamu boleh mulai dari alat yang ada sambil tetap bermimpi memiliki alat yang lebih baik."
+    },
+
+    // 07 — CHAOTIC MODE: unexpected nonsense
+    {
+        category: "CHAOTIC MODE",
+        text: "Aku ingin memahami alam semesta, tetapi password Wi-Fi sendiri saja lupa."
+    },
+    {
+        category: "CHAOTIC MODE",
+        text: "Galaksi berotasi miliaran tahun. Aku berotasi di kasur mencari posisi tidur yang benar."
+    },
+    {
+        category: "CHAOTIC MODE",
+        text: "Masa depan itu misterius. Begitu juga isi folder bernama final_baru_fix_terakhir."
+    },
+    {
+        category: "CHAOTIC MODE",
+        text: "Manusia mengirim robot ke Mars. Aku mengirim pesan ke diri sendiri supaya tidak lupa menabung."
+    },
+    {
+        category: "CHAOTIC MODE",
+        text: "Katanya ikuti kata hati. Sudah diikuti, malah menyuruh beli lensa yang belum sanggup dibeli."
+    },
+    {
+        category: "CHAOTIC MODE",
+        text: "Semesta terus mengembang. Tab browser-ku juga, tetapi yang ini tidak ilmiah."
     }
 ];
-
-const quoteElement = document.getElementById("daily-quote");
-const categoryElement = document.querySelector(
-    ".quote-footer span:first-child"
-);
-
-if (quoteElement && quotes.length > 0) {
-    const previousIndex = sessionStorage.getItem("nova-quote-index");
-
-    let randomIndex;
-
-    do {
-        randomIndex = Math.floor(Math.random() * quotes.length);
-    } while (
-        quotes.length > 1 &&
-        String(randomIndex) === previousIndex
-    );
-
-    const selectedQuote = quotes[randomIndex];
-
-    quoteElement.textContent = selectedQuote.text;
-
-    if (categoryElement) {
-        categoryElement.textContent =
-            selectedQuote.category + " TRANSMISSION";
-    }
-
-    sessionStorage.setItem(
-        "nova-quote-index",
-        String(randomIndex)
-    );
-}
-// =========================
-// NOVA TRANSMISSION
-// =========================
-
-const novaPoems = [
-    "Semua bermula dari rasa ingin tahu.\nLalu langkah kecil membawa kita lebih jauh.",
-
-    "Langit menyimpan begitu banyak rahasia.\nKita hanya perlu berani untuk menatapnya.",
-
-    "Sebuah ide mungkin terlihat kecil.\nNamun dari sanalah sesuatu yang besar dimulai.",
-
-    "Kita menjelajah bukan karena tahu jawabannya,\nmelainkan karena ingin menemukan pertanyaannya.",
-
-    "Kode, cahaya, kamera, dan imajinasi.\nBerbeda jalan, tetapi satu tujuan: berkarya.",
-
-    "Tidak semua perjalanan harus memiliki peta.\nKadang rasa penasaran adalah kompas terbaik.",
-
-    "Hari ini hanya sebuah percobaan.\nBesok mungkin menjadi sebuah karya."
-];
-
-const randomPoem =
-    novaPoems[Math.floor(Math.random() * novaPoems.length)];
-
-console.log("✦ NOVA TRANSMISSION");
-console.log(randomPoem);
