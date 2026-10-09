@@ -156,7 +156,11 @@ const quotes = [
     }
 ];
 
+
 const quoteElement = document.getElementById("daily-quote");
+
+let currentQuoteIndex = -1;
+let quoteTimer;
 
 function showRandomQuote() {
     if (!quoteElement || quotes.length === 0) {
@@ -164,12 +168,33 @@ function showRandomQuote() {
         return;
     }
 
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    const selectedQuote = quotes[randomIndex];
+    let nextIndex;
 
-    quoteElement.textContent = selectedQuote.text;
+    if (quotes.length === 1) {
+        nextIndex = 0;
+    } else {
+        do {
+            nextIndex = Math.floor(Math.random() * quotes.length);
+        } while (nextIndex === currentQuoteIndex);
+    }
 
-    console.log("Quote aktif:", selectedQuote.category);
+    currentQuoteIndex = nextIndex;
+    const selectedQuote = quotes[nextIndex];
+
+    quoteElement.classList.remove("quote-fade-in");
+    quoteElement.classList.add("quote-fade-out");
+
+    setTimeout(() => {
+        quoteElement.textContent = selectedQuote.text;
+
+        quoteElement.classList.remove("quote-fade-out");
+        void quoteElement.offsetWidth;
+        quoteElement.classList.add("quote-fade-in");
+
+        console.log("Quote aktif:", selectedQuote.category);
+    }, 600);
 }
 
 showRandomQuote();
+quoteTimer = setInterval(showRandomQuote, 8000);
+
