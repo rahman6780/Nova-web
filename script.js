@@ -1,184 +1,156 @@
 
 const quotes = [
-    // 01 — ASTRONOMY: wonder & mystery
+    // 01 — COSMIC UNKNOWN
     {
-        category: "ASTRONOMY",
-        text: "Ada bintang yang cahayanya sudah berangkat sebelum manusia menemukan cara untuk memotretnya."
+        category: "COSMIC UNKNOWN",
+        text: "Jika alam semesta memiliki batas, apa yang berada di baliknya? Dan jika tidak memiliki batas, bagaimana sesuatu bisa tidak berujung?"
     },
     {
-        category: "ASTRONOMY",
-        text: "Semesta tidak perlu berbicara. Keberadaannya saja sudah mengundang jutaan pertanyaan."
+        category: "COSMIC UNKNOWN",
+        text: "Alam semesta terus mengembang. Tetapi jika ruang itu sendiri yang mengembang, ia mengembang ke mana?"
     },
     {
-        category: "ASTRONOMY",
-        text: "Di antara miliaran galaksi, kita masih sibuk mencari tahu seberapa istimewa rumah kecil bernama Bumi."
+        category: "COSMIC UNKNOWN",
+        text: "Sebelum bintang pertama menyala, apakah kegelapan memiliki arti bagi sesuatu yang belum bisa melihat?"
     },
     {
-        category: "ASTRONOMY",
-        text: "Langit malam bukan ruang kosong. Ia penuh dengan sesuatu yang belum kita mengerti."
+        category: "COSMIC UNKNOWN",
+        text: "Di antara miliaran galaksi, berapa banyak rahasia yang bahkan belum pernah terpikirkan oleh siapa pun?"
     },
     {
-        category: "ASTRONOMY",
-        text: "Mungkin hal paling menakjubkan dari semesta adalah kenyataan bahwa kita bisa bertanya tentangnya."
-    },
-    {
-        category: "ASTRONOMY",
-        text: "Kita menatap masa lalu setiap kali melihat cahaya dari benda langit yang jauh."
+        category: "COSMIC UNKNOWN",
+        text: "Jika suatu hari kita memahami seluruh alam semesta, apakah masih ada sesuatu di luar pemahaman itu?"
     },
 
-    // 02 — DEVELOPER LIFE: honest & practical
+    // 02 — TIME PARADOX
     {
-        category: "DEVELOPER LIFE",
-        text: "Kalau cuma ingin kode yang jalan, salin saja. Kalau ingin jadi developer, cari tahu kenapa ia berjalan."
+        category: "TIME PARADOX",
+        text: "Jika kamu bertemu dirimu dari masa depan, siapa di antara kalian yang sedang hidup di masa lalu?"
     },
     {
-        category: "DEVELOPER LIFE",
-        text: "Proyek kecil yang benar-benar selesai lebih nyata daripada sepuluh ide yang cuma tinggal di kepala."
+        category: "TIME PARADOX",
+        text: "Masa lalu sudah tidak ada, masa depan belum tiba, dan saat ini terus berlalu. Jadi, di mana sebenarnya waktu berada?"
     },
     {
-        category: "DEVELOPER LIFE",
-        text: "Hari ini belum paham. Besok coba lagi. Kode tidak akan tersinggung kalau kamu belajar pelan-pelan."
+        category: "TIME PARADOX",
+        text: "Jika waktu bisa dihentikan untuk semua hal, apakah kamu akan menyadari bahwa waktu telah berhenti?"
     },
     {
-        category: "DEVELOPER LIFE",
-        text: "Mengetik cepat itu keterampilan. Memahami masalah sebelum mengetik adalah kebiasaan yang berharga."
+        category: "TIME PARADOX",
+        text: "Jika sebuah kejadian bisa diulang dengan hasil yang sama persis, apakah itu pengulangan atau kejadian yang sama?"
     },
     {
-        category: "DEVELOPER LIFE",
-        text: "Tidak semua orang harus menjadi programmer. Tapi siapa pun boleh belajar bagaimana teknologi bekerja."
-    },
-    {
-        category: "DEVELOPER LIFE",
-        text: "Satu proyek mengajarkan lebih banyak daripada seratus rencana yang tidak pernah diuji."
+        category: "TIME PARADOX",
+        text: "Apabila masa depan sudah dapat diketahui, apakah pilihan kita masih benar-benar terbuka?"
     },
 
-    // 03 — DEEP THOUGHTS: reflective & sharp
+    // 03 — REALITY GLITCH
     {
-        category: "DEEP THOUGHTS",
-        text: "Kadang kita bukan kehilangan arah. Kita hanya terlalu lama berjalan di jalan yang dipilih orang lain."
+        category: "REALITY GLITCH",
+        text: "Bagaimana kamu tahu bahwa dunia yang kamu lihat adalah dunia sebagaimana adanya, bukan sekadar cara otakmu menerjemahkannya?"
     },
     {
-        category: "DEEP THOUGHTS",
-        text: "Berubah pikiran setelah belajar sesuatu bukan kelemahan. Bisa jadi itu tanda kamu mulai memahami."
+        category: "REALITY GLITCH",
+        text: "Jika semua manusia bermimpi tentang dunia yang sama, pada titik mana kita akan menyebutnya kenyataan?"
     },
     {
-        category: "DEEP THOUGHTS",
-        text: "Tidak semua hal yang ramai dibicarakan pantas mendapatkan perhatianmu."
+        category: "REALITY GLITCH",
+        text: "Apakah sesuatu tetap memiliki makna jika tidak ada satu pun makhluk yang mampu memahaminya?"
     },
     {
-        category: "DEEP THOUGHTS",
-        text: "Ada perbedaan besar antara terlihat sibuk dan benar-benar menghasilkan sesuatu."
+        category: "REALITY GLITCH",
+        text: "Jika setiap pengamatan mengubah cara kita memahami sesuatu, bisakah kita mengenal sesuatu tanpa dipengaruhi oleh diri sendiri?"
     },
     {
-        category: "DEEP THOUGHTS",
-        text: "Kamu boleh menyimpan pelajaran dari masa lalu tanpa harus tinggal di dalamnya."
-    },
-    {
-        category: "DEEP THOUGHTS",
-        text: "Pendapat yang kuat tetap perlu ruang untuk dikoreksi."
+        category: "REALITY GLITCH",
+        text: "Bagaimana jika hal yang kita sebut nyata hanyalah bagian kecil dari sesuatu yang belum mampu kita bayangkan?"
     },
 
-    // 04 — DEV HUMOR: coding chaos
+    // 04 — HUMAN MYSTERY
     {
-        category: "DEV HUMOR",
-        text: "Bug-nya sudah diperbaiki. Sekarang aplikasinya punya masalah baru yang tidak tercantum di tiket."
+        category: "HUMAN MYSTERY",
+        text: "Jika ingatanmu berubah sedikit demi sedikit, bagian mana dari dirimu yang tetap sama?"
     },
     {
-        category: "DEV HUMOR",
-        text: "JavaScript bilang undefined. Programmer bilang, 'Lah, tadi masih ada!'"
+        category: "HUMAN MYSTERY",
+        text: "Kamu bisa mendengar pikiranmu sendiri. Tetapi siapa yang sedang mendengarkan?"
     },
     {
-        category: "DEV HUMOR",
-        text: "CSS: cuma mau geser satu div. Dua jam kemudian, seluruh layout ikut pindah rumah."
+        category: "HUMAN MYSTERY",
+        text: "Jika tidak ada seorang pun yang mengenal namamu, apakah dirimu akan menjadi orang yang berbeda?"
     },
     {
-        category: "DEV HUMOR",
-        text: "Kode berjalan sempurna di laptop sendiri. Begitu dipresentasikan, mendadak punya kepribadian."
+        category: "HUMAN MYSTERY",
+        text: "Mengapa sebuah kenangan yang sudah lama berlalu terkadang terasa lebih dekat daripada hari kemarin?"
     },
     {
-        category: "DEV HUMOR",
-        text: "Dokumentasi sudah dibaca. Tutorial sudah ditonton. Error tetap memilih jalannya sendiri."
-    },
-    {
-        category: "DEV HUMOR",
-        text: "Programmer tidak selalu butuh kopi. Kadang cuma butuh tahu kenapa tanda kurungnya kurang satu."
+        category: "HUMAN MYSTERY",
+        text: "Jika pikiran bisa mengamati dirinya sendiri, apakah ada bagian dari pikiran yang tidak pernah bisa diamati?"
     },
 
-    // 05 — PHOTOGRAPHY: light, timing & perspective
+    // 05 — EXISTENCE
     {
-        category: "PHOTOGRAPHY",
-        text: "Kamera menangkap apa yang ada di depan lensa. Fotografer memutuskan apa yang layak diceritakan."
+        category: "EXISTENCE",
+        text: "Mengapa ada sesuatu, alih-alih tidak ada apa-apa sama sekali?"
     },
     {
-        category: "PHOTOGRAPHY",
-        text: "Cahaya yang sama bisa menghasilkan dua cerita berbeda, tergantung dari mana kamu melihatnya."
+        category: "EXISTENCE",
+        text: "Jika segala sesuatu memiliki penyebab, apakah penyebab pertama juga membutuhkan penyebab?"
     },
     {
-        category: "PHOTOGRAPHY",
-        text: "Momen tidak menunggu pengaturan kameramu selesai. Belajar membaca situasi sama pentingnya dengan belajar teknis."
+        category: "EXISTENCE",
+        text: "Apakah alam semesta membutuhkan seseorang untuk menyaksikannya agar keberadaannya berarti?"
     },
     {
-        category: "PHOTOGRAPHY",
-        text: "Kadang sudut terbaik bukan yang paling tinggi, melainkan yang membuat sebuah cerita terasa dekat."
+        category: "EXISTENCE",
+        text: "Jika kehidupan memiliki makna, apakah makna itu ditemukan, diciptakan, atau keduanya?"
     },
     {
-        category: "PHOTOGRAPHY",
-        text: "Foto yang sederhana bisa terasa luar biasa ketika berhasil menyimpan sesuatu yang berarti."
-    },
-    {
-        category: "PHOTOGRAPHY",
-        text: "Peralatan punya batas. Cara melihat masih bisa terus berkembang."
+        category: "EXISTENCE",
+        text: "Jika tidak ada tujuan yang ditetapkan untuk hidup, dari mana datangnya keinginan manusia untuk mencari tujuan?"
     },
 
-    // 06 — REALITY CHECK: grounded & direct
+    // 06 — UNANSWERED SCIENCE
     {
-        category: "REALITY CHECK",
-        text: "Tidak semua minat harus menjadi profesi. Ada hal yang tetap berharga karena kamu menikmatinya."
+        category: "UNANSWERED SCIENCE",
+        text: "Bagaimana materi yang tidak hidup bisa menjadi bagian dari dunia yang akhirnya melahirkan kesadaran?"
     },
     {
-        category: "REALITY CHECK",
-        text: "Kamu tidak harus menguasai semuanya hari ini. Bahkan mesin pencari pun perlu kata kunci."
+        category: "UNANSWERED SCIENCE",
+        text: "Apakah kehidupan pernah muncul di tempat lain di alam semesta, atau Bumi adalah satu-satunya tempat yang kita ketahui sejauh ini?"
     },
     {
-        category: "REALITY CHECK",
-        text: "Rencana yang berubah bukan selalu kegagalan. Kadang informasinya memang sudah berbeda."
+        category: "UNANSWERED SCIENCE",
+        text: "Apa sebenarnya materi gelap, dan rahasia apa yang masih tersembunyi di balik pengaruh gravitasinya?"
     },
     {
-        category: "REALITY CHECK",
-        text: "Semangat bisa membuka pintu. Kebiasaanlah yang membantumu datang kembali."
+        category: "UNANSWERED SCIENCE",
+        text: "Mengapa alam semesta memiliki hukum fisika seperti yang kita amati, dan mungkinkah hukum itu berbeda?"
     },
     {
-        category: "REALITY CHECK",
-        text: "Tidak semua kemajuan terlihat keren. Sebagian cuma berupa kesalahan yang tidak kamu ulangi."
-    },
-    {
-        category: "REALITY CHECK",
-        text: "Kamu boleh mulai dari alat yang ada sambil tetap bermimpi memiliki alat yang lebih baik."
+        category: "UNANSWERED SCIENCE",
+        text: "Seberapa jauh manusia bisa memahami realitas jika alat untuk memahaminya juga merupakan bagian dari realitas itu?"
     },
 
-    // 07 — CHAOTIC MODE: unexpected nonsense
+    // 07 — IMPOSSIBLE QUESTIONS
     {
-        category: "CHAOTIC MODE",
-        text: "Aku ingin memahami alam semesta, tetapi password Wi-Fi sendiri saja lupa."
+        category: "IMPOSSIBLE QUESTIONS",
+        text: "Jika kamu lupa seluruh hidupmu tetapi tetap menjadi dirimu, bagian mana yang membuatmu tetap menjadi orang yang sama?"
     },
     {
-        category: "CHAOTIC MODE",
-        text: "Galaksi berotasi miliaran tahun. Aku berotasi di kasur mencari posisi tidur yang benar."
+        category: "IMPOSSIBLE QUESTIONS",
+        text: "Bisakah sesuatu benar-benar tidak terbatas jika kita hanya mampu membayangkannya dari sesuatu yang terbatas?"
     },
     {
-        category: "CHAOTIC MODE",
-        text: "Masa depan itu misterius. Begitu juga isi folder bernama final_baru_fix_terakhir."
+        category: "IMPOSSIBLE QUESTIONS",
+        text: "Jika semua pertanyaan memiliki jawaban, apakah pertanyaan itu sendiri juga harus memiliki jawaban?"
     },
     {
-        category: "CHAOTIC MODE",
-        text: "Manusia mengirim robot ke Mars. Aku mengirim pesan ke diri sendiri supaya tidak lupa menabung."
+        category: "IMPOSSIBLE QUESTIONS",
+        text: "Bisakah kita membayangkan sesuatu yang benar-benar tidak bisa dibayangkan?"
     },
     {
-        category: "CHAOTIC MODE",
-        text: "Katanya ikuti kata hati. Sudah diikuti, malah menyuruh beli lensa yang belum sanggup dibeli."
-    },
-    {
-        category: "CHAOTIC MODE",
-        text: "Semesta terus mengembang. Tab browser-ku juga, tetapi yang ini tidak ilmiah."
+        category: "IMPOSSIBLE QUESTIONS",
+        text: "Jika kamu menemukan jawaban untuk semua misteri, pertanyaan apa yang akan kamu ajukan terakhir kali?"
     }
 ];
