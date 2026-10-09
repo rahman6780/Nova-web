@@ -1,6 +1,5 @@
-
+console.log("NOVA MYSTERY VERSION LOADED")
 const quotes = [
-  console.log("NOVA MYSTERY VERSION LOADED");
     // 01 — COSMIC UNKNOWN
     {
         category: "COSMIC UNKNOWN",
