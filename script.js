@@ -1,4 +1,5 @@
 console.log("NOVA MYSTERY VERSION LOADED")
+
 const quotes = [
     // 01 — COSMIC UNKNOWN
     {
