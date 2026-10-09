@@ -155,3 +155,21 @@ const quotes = [
         text: "Jika kamu menemukan jawaban untuk semua misteri, pertanyaan apa yang akan kamu ajukan terakhir kali?"
     }
 ];
+
+const quoteElement = document.getElementById("daily-quote");
+
+function showRandomQuote() {
+    if (!quoteElement || quotes.length === 0) {
+        console.error("Elemen quote atau data quote tidak ditemukan!");
+        return;
+    }
+
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const selectedQuote = quotes[randomIndex];
+
+    quoteElement.textContent = selectedQuote.text;
+
+    console.log("Quote aktif:", selectedQuote.category);
+}
+
+showRandomQuote();
