@@ -806,3 +806,121 @@ nav a:hover {
         transform: none;
     }
 }
+/* ===== NOVA WEB: RESPONSIVE FIX ===== */
+
+/* Mencegah elemen melebar keluar layar */
+html {
+width: 100%;
+overflow-x: clip;
+}
+
+body {
+width: 100%;
+min-width: 0;
+}
+
+img,
+video {
+max-width: 100%;
+}
+
+/* HP dan layar sempit */
+@media (max-width: 600px) {
+header {
+padding: 18px 16px;
+}
+
+nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    justify-content: center;
+}
+
+nav ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+}
+
+.hero {
+    padding: 45px 20px;
+    min-height: auto;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.hero-visual {
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+}
+
+.orbit-one {
+    max-width: 90%;
+}
+
+.cards {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 30px 20px 50px;
+}
+
+.about {
+    margin: 0 16px 30px;
+    padding: 22px 18px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+}
+
+.about-label {
+    grid-column: auto;
+}
+
+.about-content {
+    min-width: 0;
+}
+
+.about-description {
+    overflow-wrap: anywhere;
+}
+
+.quote-section {
+    padding: 10px 16px 40px;
+}
+
+.footer {
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+}
+
+/* Tablet dan layar menengah */
+@media (min-width: 601px) and (max-width: 900px) {
+.hero {
+padding-left: 5%;
+padding-right: 5%;
+gap: 20px;
+}
+
+.hero-visual {
+    width: 260px;
+    height: 280px;
+}
+
+.cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+}
