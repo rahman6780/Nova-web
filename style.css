@@ -1100,7 +1100,7 @@ header {
 
 /* Logo navbar */
 .logo::before {
-    content: "R";
+    content: "N";
     width: 36px;
     height: 36px;
     flex-shrink: 0;
