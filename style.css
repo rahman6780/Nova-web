@@ -1095,3 +1095,99 @@ header {
     color: #9cefff;
     text-align: center;
 }
+
+/* ===== NOVA WEB: MONOGRAM LAYOUT ===== */
+
+/* Logo navbar */
+.logo::before {
+    content: "R";
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(0, 234, 255, 0.65);
+    border-radius: 10px;
+    color: #00eaff;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 234, 255, 0.12),
+        rgba(139, 123, 255, 0.18)
+    );
+    box-shadow: 0 0 18px rgba(0, 234, 255, 0.12);
+}
+
+/* Hero dan emblem */
+.hero {
+    gap: clamp(30px, 6vw, 90px);
+}
+
+.hero-content {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.hero-visual {
+    flex: 0 0 320px;
+    width: 320px;
+    height: 340px;
+}
+
+.logo-emblem {
+    width: 240px;
+    height: 240px;
+    border-radius: 28px;
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(0, 234, 255, 0.12),
+            transparent 65%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(12, 28, 54, 0.9),
+            rgba(30, 15, 58, 0.8)
+        );
+    border-color: rgba(0, 234, 255, 0.45);
+    box-shadow:
+        0 0 35px rgba(0, 234, 255, 0.12),
+        0 0 70px rgba(139, 123, 255, 0.12),
+        inset 0 0 25px rgba(139, 123, 255, 0.12);
+}
+
+.logo-r {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    filter:
+        drop-shadow(0 0 8px rgba(0, 234, 255, 0.45))
+        drop-shadow(0 0 18px rgba(139, 123, 255, 0.2));
+}
+
+.logo-glow {
+    pointer-events: none;
+    background: #563cff;
+    opacity: 0.35;
+}
+
+/* Navigasi tetap nyaman di layar kecil */
+@media (max-width: 600px) {
+    .hero {
+        gap: 32px;
+    }
+
+    .hero-visual {
+        flex: none;
+        width: 100%;
+        max-width: 320px;
+        height: 300px;
+    }
+
+    .logo-emblem {
+        width: 220px;
+        height: 220px;
+    }
+}
