@@ -924,3 +924,117 @@ gap: 20px;
 }
 
 }
+
+/* ================================
+   NOVA WEB — COSMIC VISUAL UPDATE
+================================ */
+
+body {
+    background:
+        radial-gradient(
+            ellipse at 85% 12%,
+            rgba(89, 55, 170, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 10% 45%,
+            rgba(0, 180, 220, 0.10),
+            transparent 35%
+        ),
+        #050914;
+}
+
+header {
+    background: rgba(8, 15, 28, 0.94);
+    border-bottom-color: rgba(0, 234, 255, 0.22);
+}
+
+.hero {
+    background:
+        radial-gradient(
+            circle at 80% 45%,
+            rgba(81, 58, 160, 0.14),
+            transparent 35%
+        );
+}
+
+.hero h1 span {
+    color: #72f3ff;
+    text-shadow: 0 0 24px rgba(0, 234, 255, 0.18);
+}
+
+.hero-button {
+    background: linear-gradient(110deg, #00eaff, #8b7bff);
+    box-shadow: 0 5px 24px rgba(0, 234, 255, 0.12);
+}
+
+.hero-button:hover {
+    background: linear-gradient(110deg, #ffffff, #c9c0ff);
+    box-shadow: 0 0 25px rgba(139, 123, 255, 0.35);
+}
+
+.card,
+.about {
+    background: linear-gradient(
+        145deg,
+        rgba(18, 31, 56, 0.96),
+        rgba(8, 13, 29, 0.96)
+    );
+
+    border-color: rgba(112, 125, 255, 0.28);
+}
+
+.card:hover {
+    border-color: #8b7bff;
+    box-shadow: 0 8px 30px rgba(105, 91, 255, 0.14);
+}
+
+.card:nth-child(2) .card-icon,
+.card:nth-child(2) .card-number {
+    color: #b7a5ff;
+}
+
+.card:nth-child(2) .card-icon {
+    border-color: #8b7bff;
+}
+
+.card:nth-child(3) .card-icon,
+.card:nth-child(3) .card-number {
+    color: #ff9bd2;
+}
+
+.card:nth-child(3) .card-icon {
+    border-color: #c77dff;
+}
+
+.about-tags span {
+    border-color: rgba(139, 123, 255, 0.55);
+    color: #c5baff;
+}
+
+.quote-card {
+    background:
+        radial-gradient(
+            ellipse at top left,
+            rgba(87, 62, 165, 0.25),
+            transparent 65%
+        ),
+        linear-gradient(145deg, #10213a, #080f1d);
+
+    border-color: rgba(139, 123, 255, 0.45);
+}
+
+.quote-label {
+    color: #b7a5ff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card,
+    .hero-button {
+        transition:
+            transform 0.3s ease,
+            background 0.3s ease,
+            border-color 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+}
