@@ -1077,13 +1077,6 @@ header {
     filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.45));
 }
 
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0 0 18px rgba(0, 229, 255, 0.4));
-}
-
 .logo-glow {
     position: absolute;
     width: 130px;
