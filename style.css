@@ -629,7 +629,6 @@ nav a:hover {
     animation: rahmanOrbit 7s linear infinite;
     z-index: 2;
 }
-}
 
 @keyframes rahmanOrbit {
     0% {
