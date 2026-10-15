@@ -197,4 +197,3 @@ function showRandomQuote() {
 
 showRandomQuote();
 quoteTimer = setInterval(showRandomQuote, 8000);
-
