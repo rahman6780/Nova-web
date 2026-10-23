@@ -473,7 +473,7 @@ const spy = new IntersectionObserver((entries) => {
     links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
   });
 }, { rootMargin: "-45% 0px -50% 0px" });
-["home", "projects", "about-interests", "lab"].forEach((id) => {
+["home", "pesanku-untukmu", "lab"].forEach((id) => {
   const el = document.getElementById(id);
   if (el) spy.observe(el);
 });
