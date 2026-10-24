@@ -95,3 +95,4 @@ Repositori ini terhubung ke Cloudflare Workers. Setiap kali ada push ke GitHub, 
 ## Pembuat
 
 Rahman — developer muda yang berawal dari rasa penasaran.
+  gue indo bang, dan gue dari surabaya, jangan salah paham ya.
