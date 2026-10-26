@@ -48,7 +48,7 @@ Rahman — a young developer who started from curiosity.
 
 ---
 
-# Nova Web — Space Lab (Bahasa Indonesia)
+# Nova Web — Space Lab (Terjemahan)
 
 Website pribadi bertema luar angkasa dengan beberapa game kecil di dalamnya, dibuat dari nol memakai HTML, CSS, dan JavaScript biasa. Tanpa framework dan tanpa library.
 
